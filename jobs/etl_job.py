@@ -15,7 +15,7 @@ def extract_data(spark):
     df = (
         spark
         .read
-        .csv("tests/test_data/pbp-2023.csv"))
+        .csv("tests/test_data/pbp-2023.csv", header=True))
 
     return df
 
